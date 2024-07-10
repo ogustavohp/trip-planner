@@ -42,7 +42,7 @@ export function DestinationAndDateHeader() {
 
         <div className="h-6 w-px bg-zinc-800" />
 
-        <Button>
+        <Button variant="secondary">
           Alterar local/data
           <Settings2 className="size-5" />
         </Button>
