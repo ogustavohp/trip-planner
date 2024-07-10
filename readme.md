@@ -1,10 +1,11 @@
 # Trip Planner
 
+<img alt="local-and-data" src="./images/local-and-data.png">
+
 ## Description
 The **Trip Planner** is an application that facilitates the organization of group trips. The application allows organizers to create a trip, add activities, and invite participants via email. Guests can access a link to view group activities, store important links such as Airbnb and tickets, and confirm their attendance on the participants' list.
 
-[<img alt="local-and-data" src="./images/local-and-data.png">]
-[<img alt="trip-details" src="./images/trip-details.png">]
+<img alt="trip-details" src="./images/trip-details.png">
 
 
 ## Features
