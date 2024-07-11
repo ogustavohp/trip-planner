@@ -1,0 +1,6 @@
+{
+  "extends": "@ogustavohp/eslint-config/next-node",
+  "rules": {
+    "camelcase": ["error", { "allow": ["^[a-z]+(_[a-z]+)+$"] }]
+  }
+}
