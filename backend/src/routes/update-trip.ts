@@ -1,3 +1,4 @@
+import { ClientError } from '@/errors/client-error'
 import { dayjs } from '@/lib/dayjs'
 import { prisma } from '@/lib/prisma'
 import { FastifyInstance } from 'fastify'
@@ -28,15 +29,15 @@ export async function updateTrip(app: FastifyInstance) {
       })
 
       if (!trip) {
-        throw new Error('Trip not found')
+        throw new ClientError('Trip not found')
       }
 
       if (dayjs(starts_at).isBefore(new Date())) {
-        throw new Error('Invalid trip start date.')
+        throw new ClientError('Invalid trip start date.')
       }
 
       if (dayjs(ends_at).isBefore(starts_at)) {
-        throw new Error('Invalid trip end date.')
+        throw new ClientError('Invalid trip end date.')
       }
 
       await prisma.trip.update({
