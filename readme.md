@@ -28,10 +28,11 @@ The **Trip Planner** is an application that facilitates the organization of grou
    cd trip-planner
    ```
    
-2. Install backend dependencies:
+2. Install backend dependencies and run prisma migrations:
    ```bash
    cd backend
    npm install
+   npx prisma migrate dev
    ```
    
 3. Create a .env file in the backend folder and add required environment variables.
